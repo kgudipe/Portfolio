@@ -11,7 +11,7 @@ export const HeroSection = () => {
                         <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2"> Gudipelly</span>
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                        Bio
+                        I’m a Full-stack developer specializing in React, TypeScript, Node.js, and Ruby on Rails, with experience in AWS deployments and ML-powered applications. I’ve worked on everything from redesigning large academic platforms to building project management tools and privacy-preserving ML systems, and I love shipping clean, reliable software that users actually enjoy using.
                     </p>
 
                     <div className="pt-4 opacity-0 animate-fade-in-delay-4">

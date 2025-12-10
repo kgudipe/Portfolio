@@ -3,31 +3,31 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
     {
         id: 1,
-        title: "Project One",
-        description: "Description for project one.",
+        title: "Project Management",
+        description: "A full-stack Project Management app that lets teams organize projects, track tasks, and collaborate in one place. It provides a backend service (using PostgreSQL) to manage users, projects, tasks, and related workflows securely and efficiently.",
         image: "/projects/project1.png",
-        tags: ["React", "Node.js"],
-        demoUrl: "#",
-        githubUrl: "#"
+        tags: ["Next.js", "Node.js", "PostgreSQL","Prisma","AWS"],
+        demoUrl: "https://main.d3im8sx6kpdu7p.amplifyapp.com",
+        githubUrl: "https://github.com/kgudipe/ProjectManagement-App"
     },
-    {
-        id: 2,
-        title: "Project Two",
-        description: "Description for project two.",
-        image: "/projects/project2.png",
-        tags: ["React", "Node.js"],
-        demoUrl: "#",
-        githubUrl: "#"
-    },
-    {
-        id: 3,
-        title: "Project Three",
-        description: "Description for project three.",
-        image: "/projects/project3.png",
-        tags: ["React", "Node.js"],
-        demoUrl: "#",
-        githubUrl: "#"
-    }
+    // {
+    //     id: 2,
+    //     title: "Project Two",
+    //     description: "Description for project two.",
+    //     image: "/projects/project2.png",
+    //     tags: ["React", "Node.js"],
+    //     demoUrl: "#",
+    //     githubUrl: "#"
+    // },
+    // {
+    //     id: 3,
+    //     title: "Project Three",
+    //     description: "Description for project three.",
+    //     image: "/projects/project3.png",
+    //     tags: ["React", "Node.js"],
+    //     demoUrl: "#",
+    //     githubUrl: "#"
+    // }
 ]; // Placeholder for project data
 
 export const ProjectSection = () => {
@@ -41,9 +41,9 @@ export const ProjectSection = () => {
                     A selection of projects showcasing my skills and experience in web development.
                 </p>
 
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
                     {projects.map((project, key) => (
-                        <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
+                        <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover w-full max-w-md">
                             <div className="h-48 overflow-hidden">
                                 <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                             </div>
@@ -80,7 +80,7 @@ export const ProjectSection = () => {
                 </div>
 
                 <div className="text-center mt-12">
-                    <a href="https://github.com" target="_blank" className="cosmic-button w-fit flex items-center gap-2 mx-auto">
+                    <a href="https://github.com/kgudipe" target="_blank" className="cosmic-button w-fit flex items-center gap-2 mx-auto">
                         Check my Github <ArrowRight size={16} />
                     </a>
                 </div>
